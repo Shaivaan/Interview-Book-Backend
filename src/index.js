@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/data",dataController);
 
-app.listen(process.env.port || 2333,async ()=>{
+app.listen(process.env.PORT || 2333,async ()=>{
     try{
         await connect();
         console.log(process.env.PORT);
