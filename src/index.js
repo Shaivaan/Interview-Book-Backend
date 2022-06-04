@@ -16,8 +16,7 @@ app.use("/data",dataController);
 app.listen(PORT,async ()=>{
     try{
         await connect();
-        console.log(port);
-        
+        console.log(PORT)
     }catch(err){
         console.log(err);
     }
