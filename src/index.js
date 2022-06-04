@@ -9,11 +9,11 @@ app.use(express.json());
 
 const dataController = require("./controller/data.controller");
 
-const port = process.env.PORT || 2333;
+const PORT = process.env.PORT || 2333;
 app.use("/data",dataController);
 
 
-app.listen(port,async ()=>{
+app.listen(PORT,async ()=>{
     try{
         await connect();
         console.log(port);
