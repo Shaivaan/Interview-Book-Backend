@@ -10,5 +10,6 @@ const dataSchema = new mongoose.Schema({
     timestamps:true
 })
 
+
 const Data = mongoose.model("data",dataSchema);
 module.exports = Data;
